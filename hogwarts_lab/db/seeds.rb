@@ -16,7 +16,19 @@ student1 = StudentRecord.new({
     "house" => "Hufflepuff"
     })
 
+  house1 = House.new({
+    "house_name" => "Gryffindor",
+    "house_logo" => "Gryffindor Logo"
+    })
+
+  house2 = House.new({
+    "house_name" => "Hufflepuff",
+    "house_logo" => "Hufflepuff logo"
+    })
+
   student1.save
   student2.save
 
+  house1.save
+  house2.save
   binding.pry()
